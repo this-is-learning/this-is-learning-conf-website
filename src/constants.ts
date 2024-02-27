@@ -17,5 +17,5 @@ export const SOCIAL_LINKS = {
     facebook: '',
     // TODO : add logo for linkedin: 'https://linkedin.com/company/eventedge',
     // TODO : add logo for linkedin: instagram: 'https://instagram.com/eventedge',
-    youtube: '',
+    youtube: 'https://www.youtube.com/@ThisisTechTalks',
 };
