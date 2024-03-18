@@ -11,7 +11,7 @@ const metaTitle = `${SITE_TITLE} - ${title}`
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -27,6 +27,12 @@ const metaTitle = `${SITE_TITLE} - ${title}`
 	</body>
 </html>
 <style is:global>
+	@font-face {
+		font-family: "FreeSans Bold";
+		src: local('Trebutchet MS'), url("/fonts/FreeSansBold.ttf");
+		font-display: swap;
+	}
+
 	:root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
@@ -39,9 +45,9 @@ const metaTitle = `${SITE_TITLE} - ${title}`
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #f6f6fc;
-		background-size: 224px;
+		font-family: "FreeSans Bold", sans-serif;
+		background-image: linear-gradient(transparent 23px, #b8b5b7 24px, transparent 24px), linear-gradient(90deg, transparent 23px, #b8b5b7 24px, transparent 24px); background-size: 100% 24px, 24px 100%;
+
 	}
 	code {
 		font-family:

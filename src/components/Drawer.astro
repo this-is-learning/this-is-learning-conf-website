@@ -8,7 +8,9 @@ import Footer from "./Footer.astro";
     <input id="my-drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
         <Header />
+        <main>
         <slot />
+        </main>
         <Footer />
     </div>
     <div class="drawer-side">

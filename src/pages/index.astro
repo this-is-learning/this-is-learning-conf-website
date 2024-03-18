@@ -1,50 +1,52 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import {SITE_TITLE} from "../constants";
+import {Image} from 'astro:assets';
 ---
 
 <Layout title="Home">
-	<main>
-		<div class="hero min-h-screen">
-			<div class="hero-content text-center">
-				<div class="max-w-ld flex flex-col items-center">
-					<h1 class="text-5xl pb-3 font-bold">This Is Learning Conference</h1>
-					<h2 class="text-3xl font-bold py-4">Happening on May 16-17</h2>
-					
-					<a href="https://konfhub.com/tc-b34e332d" target="_blank"><button class="btn btn-primary text-2xl font-medium">Register</button></a>
+    <div class="min-h-screen flex flex-col width-full items-center">
+        <div class="hero-content text-center justify-start items-start">
+            <div class="max-w-ld flex flex-col items-center">
+                <Image src="/images/cover.png" alt="" height="400" width="400"/>
+                <h1 class="text-5xl pb-3 font-bold">This Is Learning Conference</h1>
+                <h2 class="text-3xl font-bold py-4">Happening on May 16-17</h2>
 
-					<!-- <div class="stats shadow mt-8 grid-flow-row md:grid-flow-col">
+                <a href="https://konfhub.com/tc-b34e332d" target="_blank">
+                    <button class="btn bg-[#eaddff] rounded-none border-2 border-[#21005d] drop-shadow-til text-2xl font-medium">
+                        Register
+                    </button>
+                </a>
 
-						<div class="stat">
-							<div class="stat-title">Tracks</div>
-							<div class="stat-value">3</div>
-						</div>
-						<div class="stat">
-							<div class="stat-title">Speakers</div>
-							<div class="stat-value">40</div>
-						</div>
-						<div class="stat">
-							<div class="stat-title">Attendees</div>
-							<div class="stat-value">700</div>
-						</div>
-						<div class="stat">
-							<div class="stat-title">Sponsors</div>
-							<div class="stat-value">20</div>
-						</div>
+                <!-- <div class="stats shadow mt-8 grid-flow-row md:grid-flow-col">
 
-					</div> -->
-				</div>
-			</div>
-		</div>
-	</main>
+                    <div class="stat">
+                        <div class="stat-title">Tracks</div>
+                        <div class="stat-value">3</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-title">Speakers</div>
+                        <div class="stat-value">40</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-title">Attendees</div>
+                        <div class="stat-value">700</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-title">Sponsors</div>
+                        <div class="stat-value">20</div>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+    </div>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		max-width: calc(100% - 2rem);
-		color: white;
-		line-height: 2;
-	}
+    main {
+        margin: auto;
+        padding: 1rem;
+        max-width: calc(100% - 2rem);
+        line-height: 2;
+    }
 </style>
