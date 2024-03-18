@@ -1,12 +1,12 @@
 <header>
-    <div class="navbar bg-base-100">
+    <div class="navbar h-[40px] bg-black/55">
         <div class="flex-none">
             <label for="my-drawer" class="btn btn-square btn-ghost md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </label>
         </div>
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl" href="/">THIS IS LEARNING CONF</a>
+            <a class="btn btn-ghost text-xl" href="/">TIL CONF</a>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1 hidden md:flex">
@@ -17,7 +17,16 @@
                 <li><a href="about">About</a></li>
                 <li><a href="coc">CoC</a></li>
             </ul>
-            <a class="btn btn-primary">Register</a>
+            <a href="https://konfhub.com/tc-b34e332d" class="hidden md:block" target="_blank"><button class="btn btn-primary">Register</button></a>
         </div>
     </div>
 </header>
+
+
+<style>
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+</style>

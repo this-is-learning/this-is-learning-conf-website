@@ -1,10 +1,41 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import {SITE_TITLE} from "../constants";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Home">
 	<main>
+		<div class="hero min-h-screen">
+			<div class="hero-content text-center">
+				<div class="max-w-ld flex flex-col items-center">
+					<h1 class="text-5xl pb-3 font-bold">This Is Learning Conference</h1>
+					<h2 class="text-3xl font-bold py-4">Happening on May 16-17</h2>
+					
+					<a href="https://konfhub.com/tc-b34e332d" target="_blank"><button class="btn btn-primary text-2xl font-medium">Register</button></a>
+
+					<!-- <div class="stats shadow mt-8 grid-flow-row md:grid-flow-col">
+
+						<div class="stat">
+							<div class="stat-title">Tracks</div>
+							<div class="stat-value">3</div>
+						</div>
+						<div class="stat">
+							<div class="stat-title">Speakers</div>
+							<div class="stat-value">40</div>
+						</div>
+						<div class="stat">
+							<div class="stat-title">Attendees</div>
+							<div class="stat-value">700</div>
+						</div>
+						<div class="stat">
+							<div class="stat-title">Sponsors</div>
+							<div class="stat-value">20</div>
+						</div>
+
+					</div> -->
+				</div>
+			</div>
+		</div>
 	</main>
 </Layout>
 
@@ -12,57 +43,8 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+		line-height: 2;
 	}
 </style>
