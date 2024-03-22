@@ -45,14 +45,14 @@ export const SPEAKERS = [
     speakerTitle: "Staff Frontend Engineer",
     presentationTitle: "Writing a Frontend Framework for Fun and For Profit",
   },
-  {
-    subject: "Blockchain",
-    speakerName: "Stephen Fluin",
-    speakerImage: Stephen,
-    speakerTitle:
-      "Head of Developers Relations working on @AxelarCore",
-    presentationTitle: "Connecting Your Angular App to the Blockchain",
-    },
+//   {
+//     subject: "Blockchain",
+//     speakerName: "Stephen Fluin",
+//     speakerImage: Stephen,
+//     speakerTitle:
+//       "Head of Developers Relations working on @AxelarCore",
+//     presentationTitle: "Connecting Your Angular App to the Blockchain",
+//     },
     {
         subject: "TIL Contributors",
         speakerName: "Dharmen Shah",
