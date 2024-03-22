@@ -4,7 +4,8 @@ import Natalia from "../public/images/natalia.png"
 import Corbin from "../public/images/corbin.png"
 import Stephen from "../public/images/stephen.png"
 import Dharmen from "../public/images/dharmen.png"
-import Ankur from "../public/images/ankur.png"
+import Ankur from "../public/images/ankur.png";
+import Tobiloba from "../public/images/tobi.jpeg";
 
 export const SITE_TITLE = "TIL-Conf";
 
@@ -45,14 +46,14 @@ export const SPEAKERS = [
     speakerTitle: "Staff Frontend Engineer",
     presentationTitle: "Writing a Frontend Framework for Fun and For Profit",
   },
-//   {
-//     subject: "Blockchain",
-//     speakerName: "Stephen Fluin",
-//     speakerImage: Stephen,
-//     speakerTitle:
-//       "Head of Developers Relations working on @AxelarCore",
-//     presentationTitle: "Connecting Your Angular App to the Blockchain",
-//     },
+  {
+    subject: "TIL Contributors",
+    speakerName: "Tobiloba Adedeji",
+    speakerImage: Tobiloba,
+    speakerTitle:
+      "Support Engineer at Million.js",
+    presentationTitle: "Million Lint: The future of linting",
+    },
     {
         subject: "TIL Contributors",
         speakerName: "Dharmen Shah",
