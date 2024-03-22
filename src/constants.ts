@@ -32,14 +32,6 @@ export const SOCIAL_LINKS = {
 export const SPEAKERS = [
   {
     subject: "Keynote",
-    speakerName: "Santosh Yadav",
-    speakerImage: Santosh,
-    speakerTitle:
-      "GDE for Angular, GitHub Star, Senior Software Engineer - Celonis",
-    presentationTitle: "Contributing to open-source",
-  },
-  {
-    subject: "Keynote",
     speakerName: "Natalia Venditto",
     speakerImage: Natalia,
     speakerTitle: "Lead JavaScript e2e Devtools and DX @Microsoft",
