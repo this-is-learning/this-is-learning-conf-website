@@ -13,7 +13,7 @@ import { SPEAKERS } from "../constants";
 
 
         <section class="max-w-screen-[1000px] m-auto mt-20 px-1 md:px-4 flex items-center justify-center">
-            <div class="speaker-holder flex justify-between flex-wrap gap-3">
+            <div class="speaker-holder flex justify-center flex-wrap gap-8">
                 {SPEAKERS.map(speaker =>  <SpeakerCard speakerName={speaker.speakerName} speakerTitle={speaker.speakerTitle} subject={speaker.subject} presentationTitle={speaker.presentationTitle} speakerImage={speaker.speakerImage}/>)}
             </div>
         </section>
