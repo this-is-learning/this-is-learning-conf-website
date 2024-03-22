@@ -19,7 +19,15 @@ const metaTitle = `${SITE_TITLE} - ${title}`
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{metaTitle}</title>
+
 		<meta property="og:image" content={new URL('/images/banner.webp', Astro.url)} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content="This Is Learning Conference 2024" />
+		<meta property="twitter:image" content={new URL('/images/banner.webp', Astro.url)} />
 	</head>
 	<body>
 			<Drawer>
