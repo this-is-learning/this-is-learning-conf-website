@@ -1,0 +1,32 @@
+---
+import {SITE_TITLE} from "../constants";
+import Layout from "../layouts/Layout.astro";
+import SpeakerCard from "../components/SpeakerCard.astro";
+import { SPEAKERS } from "../constants";
+---
+
+
+<Layout title={SITE_TITLE}>
+    <main class="bg-white min-h-screen m-auto max-w-screen-3xl rounded-2xl pb-8">
+
+        <h1 class="text-4xl text-center pt-6">Speakers</h1>
+
+
+        <section class="max-w-screen-[1000px] m-auto mt-20 px-1 md:px-4 flex items-center justify-center">
+            <div class="speaker-holder flex flex-wrap justify-center gap-8">
+                {SPEAKERS.map(speaker =>  <SpeakerCard speakerName={speaker.speakerName} speakerTitle={speaker.speakerTitle} subject={speaker.subject} presentationTitle={speaker.presentationTitle} speakerImage={speaker.speakerImage}/>)}
+            </div>
+        </section>
+    </main>
+</Layout>
+
+
+<style>
+    @media (max-width: 831px) {
+        .speaker-holder {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+</style>

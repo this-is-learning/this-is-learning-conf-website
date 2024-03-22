@@ -1,0 +1,201 @@
+---
+import {Image} from 'astro:assets';
+import TilConfCardImage from "../../public/images/til-conf-card.png"
+
+interface Props {
+	subject: string;
+	speakerName: string;
+    speakerImage: ImageMetadata;
+	speakerTitle: string;
+    presentationTitle: string;
+}
+
+const { subject, speakerImage, speakerName, speakerTitle, presentationTitle } = Astro.props;
+---
+
+
+<article class="speaker-card w-[450px] h-[550px] mb-10">
+    <div class="inner w-[100%] h-[90%] m-2 flex flex-col">
+        <div class="flex justify-between">
+           <p class="subject py-[5px] px-[15px] bg-[#E8DEF8] rounded-none border-2 border-[#21005d] drop-shadow-til text-xl font-medium self-center">{subject}</p>
+           <Image src="/images/til-conf-card.png" alt="til conf image" height="110" width="118" class="ml-[55px] til-image"/>
+        </div>
+        <div>
+            <div class="speaker-image relative w-[250px] h-[300px] bg-[#D9D9D9] rounded-none border-2 border-[#21005d] drop-shadow-til text-xl font-medium">
+                <Image src={speakerImage} alt="til conf image" class="object-cover"/> 
+                <ul class="flex flex-col gap-2 absolute -right-[190px] -bottom-2">
+                  <li class="w-[201px] h-[85px] flex items-center justify-center text-[#31111D] bg-[#FFD8E4] rounded-none border-2 border-[#31111D] drop-shadow-til text-3xl font-medium text-center">{speakerName}</li>
+                  <li class="w-[201px] h-[94px] flex items-center justify-center text-[#263238] bg-[#CFD8DC] rounded-none border-2 border-[#263238] drop-shadow-til text-sm font-medium text-center">{speakerTitle}</li>
+                  <li class="w-[201px] flex items-center justify-center text-[#1A237E] bg-[#C5CAE9] rounded-none border-2 border-[#1A237E] drop-shadow-til text-sm font-medium text-center p-[3px]">{presentationTitle}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between">
+        <div class="basis-[80%]">
+            <p class="til-button py-[3px] px-[20px] bg-[#FFFFFF] rounded-none border-2 border-[#21005D] drop-shadow-til text-lg font-medium text-center">This is Learning</p>
+        </div>
+        <p class="hashtag btn btn-ghost text-3xl drop-shadow-til title">#TILCONF</p>
+    </div>
+</article>
+
+<style>
+    .inner {
+        background-image: linear-gradient(transparent 23px, #b8b5b7 24px, transparent 24px), linear-gradient(90deg, transparent 23px, #b8b5b7 24px, transparent 24px); background-size: 100% 24px, 24px 100%;
+    }
+
+    .title {
+        color: white;
+        -webkit-text-stroke: 1px #21005D;
+    }
+
+
+
+
+@media (max-width: 1051px) {
+    .speaker-card {
+        width: 400px;
+        height: 500px;
+    }
+
+  .til-image {
+    width: 80px;
+    height: 100px;
+  }
+
+  .speaker-image {
+    width: 240px;
+    height: 280px;
+  }
+
+  ul {
+  right: -130px;
+  }
+
+  li {
+    width: 150px;
+  }
+
+  li:nth-child(1){
+    height: 75px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  li:nth-child(2) {
+    height: 70px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  li:nth-child(3) {
+  
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .til-button {
+    padding: 2px 15px;
+  }
+
+  .hashtag {
+  }
+}
+
+@media (max-width: 541px) {
+ li:nth-child(3) {
+    height: 55px;
+    font-size: 8px;
+  }
+}
+
+
+@media (max-width: 430px) {
+    .inner {
+    gap: 10px;
+    }
+
+    .speaker-card {
+        width: 350px;
+        height: 450px;
+    }
+
+  .til-image {
+    width: 80px;
+    height: 100px;
+  }
+
+  .speaker-image {
+    width: 240px;
+    height: 280px;
+  }
+
+  ul {
+  right: -80px;
+  }
+
+  li {
+    width: 110px;
+  }
+
+  li:nth-child(1){
+    height: 60px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  li:nth-child(2) {
+    height: 55px;
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  li:nth-child(3) {
+    height: 50px;
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .til-button {
+    padding: 2px 10px;
+    font-size: 15px;
+  }
+
+  .hashtag {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+    .inner {
+    gap: 10px;
+    }
+
+    .speaker-card {
+        width: 320px;
+        height: 450px;
+    }
+
+  .til-image {
+    width: 80px;
+    height: 100px;
+  }
+
+  .speaker-image {
+    width: 240px;
+    height: 280px;
+  }
+
+  ul {
+  right: -80px;
+  }
+
+  li {
+    width: 110px;
+  }
+
+ 
+}
+
+
+</style>
