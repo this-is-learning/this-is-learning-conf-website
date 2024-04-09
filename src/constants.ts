@@ -1,11 +1,12 @@
 import type { INavigationLink } from "./types/navigation-link.type.ts";
-import Santosh from "../public/images/santosh.png"
-import Natalia from "../public/images/natalia.png"
-import Corbin from "../public/images/corbin.png"
-import Stephen from "../public/images/stephen.png"
-import Dharmen from "../public/images/dharmen.png"
+import Santosh from "../public/images/santosh.png";
+import Natalia from "../public/images/natalia.png";
+import Corbin from "../public/images/corbin.png";
+import Stephen from "../public/images/stephen.png";
+import Dharmen from "../public/images/dharmen.png";
 import Ankur from "../public/images/ankur.png";
 import Tobiloba from "../public/images/tobi.jpeg";
+import Martina from "../public/images/martina.png";
 
 export const SITE_TITLE = "TIL-Conf";
 
@@ -40,6 +41,13 @@ export const SPEAKERS = [
       "From frontend developer to intelligent JavaScript apps engineer: a journey of evolution",
   },
   {
+    subject: "Keynote",
+    speakerName: "Martina Kraus",
+    speakerImage: Martina,
+    speakerTitle: "Application Security Engineer | Kraus IT Consulting",
+    presentationTitle: "The state of security in Single Page Applications",
+  },
+  {
     subject: "TIL Contributors",
     speakerName: "Corbin Crutchley",
     speakerImage: Corbin,
@@ -50,24 +58,21 @@ export const SPEAKERS = [
     subject: "TIL Contributors",
     speakerName: "Tobiloba Adedeji",
     speakerImage: Tobiloba,
-    speakerTitle:
-      "Support Engineer at Million.js",
+    speakerTitle: "Support Engineer at Million.js",
     presentationTitle: "Million Lint: The future of linting",
-    },
-    {
-        subject: "TIL Contributors",
-        speakerName: "Dharmen Shah",
-        speakerImage: Dharmen,
-        speakerTitle:
-          "Team Lead @Solvative",
-        presentationTitle: "Using Material 3 (M3) design with Angular",
-    },
-    {
-        subject: "Software Engineering",
-        speakerName: "Ankur Tyagi",
-        speakerImage: Ankur,
-        speakerTitle:
-          "Software Engineer",
-        presentationTitle: "Writing for Software Engineers",
-      },
+  },
+  {
+    subject: "TIL Contributors",
+    speakerName: "Dharmen Shah",
+    speakerImage: Dharmen,
+    speakerTitle: "Team Lead @Solvative",
+    presentationTitle: "Using Material 3 (M3) design with Angular",
+  },
+  {
+    subject: "Software Engineering",
+    speakerName: "Ankur Tyagi",
+    speakerImage: Ankur,
+    speakerTitle: "Software Engineer",
+    presentationTitle: "Writing for Software Engineers",
+  },
 ];
