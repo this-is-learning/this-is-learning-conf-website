@@ -28,6 +28,8 @@
         position: sticky;
         top: 0;
         z-index: 1;
+        background-color: transparent; 
+       transition: background-color 0.3s ease; 
     }
 
     .title {
@@ -36,6 +38,18 @@
     }
 
 </style>
+
+
+<script>
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header')!;
+    if (window.scrollY > 0) {
+      header.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'; 
+    } else {
+      header.style.backgroundColor = 'transparent'; 
+    }
+  });
+</script>
 
 
 
