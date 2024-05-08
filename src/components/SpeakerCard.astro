@@ -23,10 +23,10 @@ const { subject, speakerImage, speakerName, speakerTitle, presentationTitle } = 
         <div>
             <div class="speaker-image relative w-[250px] h-[300px] bg-[#D9D9D9] rounded-none border-2 border-[#21005d] drop-shadow-til text-xl font-medium">
                 <Image src={speakerImage}  alt="til conf image" class="object-cover h-[100%]"/> 
-                <ul class="flex flex-col gap-2 absolute -right-[190px] -bottom-2">
-                  <li class="w-[201px] p-[10px] flex items-center justify-center text-[#31111D] bg-[#FFD8E4] rounded-none border-2 border-[#31111D] drop-shadow-til text-3xl font-medium text-center">{speakerName}</li>
-                  <li class="w-[201px] p-[15px]  flex items-center justify-center text-[#263238] bg-[#CFD8DC] rounded-none border-2 border-[#263238] drop-shadow-til text-sm font-medium text-center">{speakerTitle}</li>
-                  <li class="w-[201px] flex items-center justify-center text-[#1A237E] bg-[#C5CAE9] rounded-none border-2 border-[#1A237E] drop-shadow-til text-sm font-medium text-center p-[3px]">{presentationTitle}</li>
+                <ul class="flex flex-col gap-2 absolute -right-[190px] -bottom-1">
+                  <li class="w-[210px] p-[15px] flex items-center justify-center text-[#31111D] bg-[#FFD8E4] rounded-none border-2 border-[#31111D] drop-shadow-til text-2xl font-medium text-center">{speakerName}</li>
+                  <li class="w-[210px] p-[15px]  flex items-center justify-center text-[#263238] bg-[#CFD8DC] rounded-none border-2 border-[#263238] drop-shadow-til text-sm font-medium text-center">{speakerTitle}</li>
+                  <li class="w-[210px] flex items-center justify-center text-[#1A237E] bg-[#C5CAE9] rounded-none border-2 border-[#1A237E] drop-shadow-til text-sm font-medium text-center p-[3px]">{presentationTitle}</li>
                 </ul>
             </div>
         </div>
@@ -77,7 +77,7 @@ const { subject, speakerImage, speakerName, speakerTitle, presentationTitle } = 
   }
 
   li:nth-child(1){
-    font-size: 22px;
+    font-size: 19px;
     line-height: 24px;
   }
 
