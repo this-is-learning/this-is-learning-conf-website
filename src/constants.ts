@@ -334,8 +334,8 @@ export const SPEAKERS = [
     subject: "Cloud and Backend",
     speakerName: "Hrittik Roy",
     speakerImage: Hritik,
-    speakerTitle: "Software Engineer",
-    presentationTitle: "Multitenancy in the Kubernetes era",
+    speakerTitle: "Platform Advocate | CNCF Ambassador",
+    presentationTitle: "Multitenancy in the Kubernetes Era",
   },
   {
     subject: "AI/ML",
