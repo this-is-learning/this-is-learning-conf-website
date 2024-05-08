@@ -1,12 +1,14 @@
 import type { INavigationLink } from "./types/navigation-link.type.ts";
-import Santosh from "../public/images/santosh.png";
+
 import Natalia from "../public/images/natalia.png";
 import Corbin from "../public/images/corbin.png";
-import Stephen from "../public/images/stephen.png";
 import Dharmen from "../public/images/dharmen.png";
 import Ankur from "../public/images/ankur.png";
 import Tobiloba from "../public/images/tobi.jpeg";
 import Martina from "../public/images/martina.png";
+import Xavier from "../public/images/xavier.jpeg";
+import Mihai from "../public/images/mihai.jpeg";
+import Martin from "../public/images/martin-sonn.jpeg"
 
 export const SITE_TITLE = "TIL-Conf";
 
@@ -74,5 +76,26 @@ export const SPEAKERS = [
     speakerImage: Ankur,
     speakerTitle: "Software Engineer",
     presentationTitle: "Writing for Software Engineers",
+  },
+  {
+    subject: "AI/ML",
+    speakerName: "Xavier Portilla Edo",
+    speakerImage: Xavier,
+    speakerTitle: "Software Engineer",
+    presentationTitle: "Build conversational AI experiences powered by LLMs",
+  },
+  {
+    subject: "AI/ML",
+    speakerName: "Mihai Maruseac",
+    speakerImage: Mihai,
+    speakerTitle: "Software Engineer",
+    presentationTitle: "End-to-end secure ML development",
+  },
+  {
+    subject: "Software Engineering",
+    speakerName: "Martin Sonnenholzer",
+    speakerImage: Martin,
+    speakerTitle: "Software Engineer",
+    presentationTitle: "We are Knowledge Workers -  From Chaos to Clarity",
   },
 ];
