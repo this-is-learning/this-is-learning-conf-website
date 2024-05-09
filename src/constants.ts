@@ -267,7 +267,7 @@ export const SPEAKERS = [
     subject: "Web and Mobile",
     speakerName: "Jaroslaw Zolnowski",
     speakerImage: Jaroslaw,
-    speakerTitle: "Software Engineer",
+    speakerTitle: "Senior Technical Architect @DevIntent",
     presentationTitle:
       "From Default Drama to Signal Superpowers - Navigating Angular's Evolution for Peak Performance!",
   },
