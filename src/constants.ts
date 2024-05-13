@@ -62,7 +62,7 @@ import Olanetsoft from "../public/images/olanetsoft.jpeg";
 import Thomas from "../public/images/thomas-laforge.png";
 import Sonam from "../public/images/sonam.jpeg";
 import Cecilia from "../public/images/cecilia.jpeg";
-import serkan from '../public/images/serkan.png.png';
+import serkan from '../public/images/serkan.png';
 import aakansha from '../public/images/aakansha.jpeg';
 
 export const SITE_TITLE = "TIL-Conf";
