@@ -1,6 +1,5 @@
 import type { INavigationLink } from "./types/navigation-link.type.ts";
 
-import Natalia from "../public/images/natalia.png";
 import Dharmen from "../public/images/dharmen.png";
 import Ankur from "../public/images/ankur.png";
 import Tobiloba from "../public/images/tobi.jpeg";
@@ -63,6 +62,8 @@ import Olanetsoft from "../public/images/olanetsoft.jpeg";
 import Thomas from "../public/images/thomas-laforge.png";
 import Sonam from "../public/images/sonam.jpeg";
 import Cecilia from "../public/images/cecilia.jpeg";
+import serkan from '../public/images/serkan.png.png';
+import aakansha from '../public/images/aakansha.jpeg';
 
 export const SITE_TITLE = "TIL-Conf";
 
@@ -90,6 +91,13 @@ export const SPEAKERS = [
     speakerImage: Martina,
     speakerTitle: "Application Security Engineer | Kraus IT Consulting",
     presentationTitle: "The state of security in Single Page Applications",
+  },
+  {
+    subject: "Keynote",
+    speakerName: "Aakansha Doshi",
+    speakerImage: aakansha,
+    speakerTitle: "Opensource Developer",
+    presentationTitle: "Canvas Chronicles: Crafting Text Containers ",
   },
   {
     subject: "TIL Contributors",
@@ -543,4 +551,11 @@ export const SPEAKERS = [
     speakerTitle: "Software Engineer",
     presentationTitle: "Generative DevOps",
   },
+  {
+    subject: "TIL Contributors",
+    speakerName: "Serkan Sipahi",
+    speakerImage: serkan,
+    speakerTitle: "Software Engineer",
+    presentationTitle: "TypeScript's 'Never' Type: The Invisible Force Shaping Code?",
+  }
 ];
