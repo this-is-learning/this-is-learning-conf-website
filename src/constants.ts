@@ -194,7 +194,7 @@ export const SPEAKERS = [
     speakerImage: Dale,
     speakerTitle: "Software Engineer",
     presentationTitle:
-      "How to Bounce Back After a Layoff: Tips and Strategies image How to Bounce Back After a Layoff: Tips and Strategies",
+      "How to Bounce Back After a Layoff: Tips and Strategies",
   },
   {
     subject: "CI/CD",
