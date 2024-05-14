@@ -64,6 +64,7 @@ import Sonam from "../public/images/sonam.jpeg";
 import Cecilia from "../public/images/cecilia.jpeg";
 import serkan from '../public/images/serkan.png';
 import aakansha from '../public/images/aakansha.jpeg';
+import fabian from '../public/images/fabienvauchelles2.jpeg';
 
 export const SITE_TITLE = "TIL-Conf";
 
@@ -557,5 +558,12 @@ export const SPEAKERS = [
     speakerImage: serkan,
     speakerTitle: "Software Engineer",
     presentationTitle: "TypeScript's 'Never' Type: The Invisible Force Shaping Code?",
+  },
+  {
+    subject: "Web and Mobile",
+    speakerName: "Fabien Vauchelles",
+    speakerImage: fabian,
+    speakerTitle: "Anti-Ban & Web-Scraping Expert @ Wiremind",
+    presentationTitle: "Live-Coding: Mastering Web Scraping with Scrapoxy",
   }
 ];
