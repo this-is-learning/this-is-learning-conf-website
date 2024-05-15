@@ -71,6 +71,8 @@ export const SITE_TITLE = "TIL-Conf";
 
 export const NAVIGATION_LINKS: Array<INavigationLink> = [
   // {title: 'Agenda', href: '/agenda'},
+  { title: "Agenda 16th", href: "/agenda-day1" },
+  { title: "Agenda 17th", href: "/agenda-day2" },
   { title: "Speakers", href: "/speakers" },
   // {title: 'Sponsors', href: '/sponsors'},
   // {title: 'About', href: '/about'},
