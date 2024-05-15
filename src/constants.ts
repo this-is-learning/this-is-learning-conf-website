@@ -1,6 +1,7 @@
 import type { INavigationLink } from "./types/navigation-link.type.ts";
 
 import Dharmen from "../public/images/dharmen.png";
+import michael from "../public/images/michael.jpeg";
 import Ankur from "../public/images/ankur.png";
 import Tobiloba from "../public/images/tobi.jpeg";
 import Martina from "../public/images/martina.png";
@@ -98,7 +99,14 @@ export const SPEAKERS = [
     speakerName: "Aakansha Doshi",
     speakerImage: aakansha,
     speakerTitle: "Opensource Developer",
-    presentationTitle: "Canvas Chronicles: Crafting Text Containers ",
+    presentationTitle: "Canvas Chronicles: Crafting Text Containers",
+  },
+  {
+    subject: "AI/ML and  CI/CD",
+    speakerName: "Michael Hladky",
+    speakerImage: michael,
+    speakerTitle: "CEO @pushpased.io",
+    presentationTitle: "How To Migrate Into a Monorepo: Strategies and Best Practices",
   },
   {
     subject: "TIL Contributors",
