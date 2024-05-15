@@ -1,0 +1,430 @@
+---
+import {SITE_TITLE} from "../constants";
+import Layout from "../layouts/Layout.astro";
+import HeaderHero from '../components/HeaderHero.astro';
+---
+
+<Layout title={SITE_TITLE}>
+    <main>
+        <HeaderHero>
+            <span slot="title">Agenda</span>
+            <span slot="description">May 16th</span>
+        </HeaderHero>
+        <section class="max-w-screen-lg m-auto px-8">
+
+            <div class="schedule" aria-labelledby="schedule-heading">
+
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Track 1</span>
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">Track 2</span>
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">Track 3</span>
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-4; grid-row: tracks;">Track 4</span>
+
+                <div class="session session-7 track-all" style="grid-column: track-1-start / track-4-end; grid-row: time-0400 / time-0430;">
+                    <h3 class="session-title">Canvas Chronicles: Crafting Text Containers</h3>
+                    <span class="session-presenter">Aakansha Doshi</span>
+                </div>
+
+                <div class="session session-1 track-1" style="grid-column: track-1; grid-row: time-0430 / time-0500;">
+                    <h3 class="session-title">Tanstack, yet another state management library?</h3>
+                    <span class="session-time">04:30 - 05:00</span>
+                    <span class="session-presenter">Thomas Laforge</span>
+                </div>
+
+                <div class="session session-1 track-2" style="grid-column: track-2; grid-row: time-0430 / time-0500;">
+                    <h3 class="session-title">Exploring the new Identity API endpoints in ASP.NET 8</h3>
+                    <span class="session-time">04:30 - 05:00</span>
+                    <span class="session-presenter">Aditya Oberai</span>
+                </div>
+
+                <div class="session session-1 track-all" style="grid-column: track-3; grid-row: time-0430 / time-0500;">
+                    <h3 class="session-title"></h3>
+                    <span class="session-time"></span>
+                    <span class="session-presenter"></span>
+                </div>
+
+                <div class="session session-1 track-4" style="grid-column: track-4; grid-row: time-0430 / time-0500;">
+                    <h3 class="session-title">How To Migrate Into a Monorepo: Strategies and Best Practices</h3>
+                    <span class="session-time">04:30 - 05:00</span>
+                    <span class="session-presenter">Michael Hladky</span>
+                </div>
+
+                <div class="session session-2 track-1" style="grid-column: track-1; grid-row: time-0500 / time-0530;">
+                    <h3 class="session-title">Optimizing Enterprise Grade Web Performance: Strategies, Metrics, and Impact</h3>
+                    <span class="session-time">05:00 - 05:30</span>
+                    <span class="session-presenter">Atishay Baid</span>
+                </div>
+
+                <div class="session session-2 track-2" style="grid-column: track-2; grid-row: time-0500 / time-0530;">
+                    <h3 class="session-title">Multitenancy in the Kubernetes era</h3>
+                    <span class="session-time">05:00 - 05:30</span>
+                    <span class="session-presenter">Hrittik Roy</span>
+                </div>
+
+                <div class="session session-2 track-3" style="grid-column: track-3; grid-row: time-0500 / time-0530;">
+                    <h3 class="session-title">How Design Thinking is Building Better Communities.</h3>
+                    <span class="session-time">05:00 - 05:30</span>
+                    <span class="session-presenter">Dennis Candor</span>
+                </div>
+
+                <div class="session session-2 track-4" style="grid-column: track-4; grid-row: time-0500 / time-0530;">
+                    <h3 class="session-title">CI/CD in MLOps</h3>
+                    <span class="session-time">05:00 - 05:30</span>
+                    <span class="session-presenter">Shivay Lamba</span>
+                </div>
+
+                <div class="session session-3 track-1" style="grid-column: track-1; grid-row: time-0530 / time-0600;">
+                    <h3 class="session-title">Getting started with KMP and CMP</h3>
+                    <span class="session-time">05:30 - 06:00</span>
+                    <span class="session-presenter">Abdul Basit</span>
+                </div>
+
+                <div class="session session-3 track-2" style="grid-column: track-2; grid-row: time-0530 / time-0600;">
+                    <h3 class="session-title">Kickstart your first backend - REST API with Python FastAPI</h3>
+                    <span class="session-time">05:30 - 06:00</span>
+                    <span class="session-presenter">Siva S</span>
+                </div>
+
+                <div class="session session-3 track-3" style="grid-column: track-3; grid-row: time-0530 / time-0600;">
+                    <h3 class="session-title">Less is More: Unleashing Time-Saving CI/CD Practices</h3>
+                    <span class="session-time">05:30 - 06:00</span>
+                    <span class="session-presenter">Monika</span>
+                </div>
+
+                <div class="session session-3 track-4" style="grid-column: track-4; grid-row: time-0530 / time-0600;">
+                    <h3 class="session-title">The Future of Design with AI </h3>
+                    <span class="session-time">05:30 - 06:00</span>
+                    <span class="session-presenter">Okwudiri munachi victor</span>
+                </div>
+
+                <div class="session session-4 track-1" style="grid-column: track-1; grid-row: time-0600 / time-0630;">
+                    <h3 class="session-title">Get rid of Impossible States 😱 and make your State Predictable with State Machines</h3>
+                    <span class="session-time">06:00 - 06:30</span>
+                    <span class="session-presenter">Tomasz Ducin</span>
+                </div>
+
+                <div class="session session-4 track-all" style="grid-column: track-2; grid-row: time-0600 / time-0630;">
+                    <h3 class="session-title"></h3>
+                    <span class="session-time"></span>
+                    <span class="session-presenter"></span>
+                </div>
+
+                <div class="session session-4 track-all" style="grid-column: track-3; grid-row: time-0600 / time-0630;">
+                    <h3 class="session-title"></h3>
+                    <span class="session-time"></span>
+                    <span class="session-presenter"></span>
+                </div>
+
+                <div class="session session-4 track-4" style="grid-column: track-4; grid-row: time-0600 / time-0630;">
+                    <h3 class="session-title">Green DevOps: Building Sustainable Software</h3>
+                    <span class="session-time">06:00 - 06:30</span>
+                    <span class="session-presenter">Neel Shah</span>
+                </div>
+
+                <div class="session session-5 track-1" style="grid-column: track-1; grid-row: time-0630 / time-0700;">
+                    <h3 class="session-title">Leveraging ngComponentOutlet to build scalable and extendable Angular applications</h3>
+                    <span class="session-time">06:30 - 07:00</span>
+                    <span class="session-presenter">Hien Pham</span>
+                </div>
+
+                <div class="session session-5 track-2" style="grid-column: track-2; grid-row: time-0630 / time-0700;">
+                    <h3 class="session-title">The Benefits of Using Hashnode Headless CMS for Your Blog </h3>
+                    <span class="session-time">06:30 - 07:00</span>
+                    <span class="session-presenter">Favourite Jome</span>
+                </div>
+
+                <div class="session session-5 track-3" style="grid-column: track-3; grid-row: time-0630 / time-0700;">
+                    <h3 class="session-title">How to Bounce Back After a Layoff: Tips and Strategies image How to Bounce Back After a Layoff: Tips and Strategies</h3>
+                    <span class="session-time">06:30 - 07:00</span>
+                    <span class="session-presenter">Dale Nguyen</span>
+                </div>
+
+                <div class="session session-5 track-4" style="grid-column: track-4; grid-row: time-0630 / time-0700;">
+                    <h3 class="session-title">From Default Drama to Signal Superpowers - Navigating Angular's Evolution for Peak Performance!</h3>
+                    <span class="session-time">06:30 - 07:00</span>
+                    <span class="session-presenter">Jaroslaw Zolnowski</span>
+                </div>
+
+
+                <div class="session session-7 track-all" style="grid-column: track-1-start / track-4-end; grid-row: time-0700 / time-0800;">
+                    <h3 class="session-title">Take a break!</h3>
+                </div>
+
+                <div class="session session-6 track-1" style="grid-column: track-1; grid-row: time-0800 / time-0830;">
+                    <h3 class="session-title">Testing in Angular in 2024</h3>
+                    <span class="session-time">08:00 - 08:30</span>
+                    <span class="session-presenter">Rainer Hahnekamp</span>
+                </div>
+
+                <div class="session session-6 track-2" style="grid-column: track-2; grid-row: time-0800 / time-0830;">
+                    <h3 class="session-title">Modern C#: A Dive into the Community's Most Loved New Features</h3>
+                    <span class="session-time">08:00 - 08:30</span>
+                    <span class="session-presenter">Louëlla Creemers</span>
+                </div>
+
+                <div class="session session-6 track-3" style="grid-column: track-3; grid-row: time-0800 / time-0830;">
+                    <h3 class="session-title">GitLab CI/CD pipelines and how they can revolutionize your development process</h3>
+                    <span class="session-time">08:00 - 08:30</span>
+                    <span class="session-presenter">Nitesh Solanki</span>
+                </div>
+
+                <div class="session session-6 track-4" style="grid-column: track-4; grid-row: time-0800 / time-0830;">
+                    <h3 class="session-title">Building GenAI Apps</h3>
+                    <span class="session-time">08:00 - 08:30</span>
+                    <span class="session-presenter">Aman Sharma</span>
+                </div>
+
+                <div class="session session-7 track-1" style="grid-column: track-1; grid-row: time-0830 / time-0900;">
+                    <h3 class="session-title">Cut My Task Into Pieces - This is Concurrent Mode</h3>
+                    <span class="session-time">08:30 - 09:00</span>
+                    <span class="session-presenter">Julian Jandl</span>
+                </div>
+
+                <div class="session session-7 track-2" style="grid-column: track-2; grid-row: time-0830 / time-0900;">
+                    <h3 class="session-title">Optimizing Web Animation for Performance.</h3>
+                    <span class="session-time">08:30 - 09:00</span>
+                    <span class="session-presenter">Ido Evergreen</span>
+                </div>
+
+                <div class="session session-7 track-3" style="grid-column: track-3; grid-row: time-0830 / time-0900;">
+                    <h3 class="session-title">How to Be An Ethical Engineering Leader</h3>
+                    <span class="session-time">08:30 - 09:00</span>
+                    <span class="session-presenter">Adriana Villela</span>
+                </div>
+
+                <div class="session session-7 track-4" style="grid-column: track-4; grid-row: time-0830 / time-0900;">
+                    <h3 class="session-title">Generative DevOps</h3>
+                    <span class="session-time">08:30 - 09:00</span>
+                    <span class="session-presenter">Cecelia Martinez</span>
+                </div>
+
+                <div class="session session-8 track-1" style="grid-column: track-1; grid-row: time-0900 / time-0930;">
+                    <h3 class="session-title">Progressive Web App - The Sweet Spot</h3>
+                    <span class="session-time">09:00 - 09:30</span>
+                    <span class="session-presenter">Ese Monday</span>
+                </div>
+
+                <div class="session session-8 track-2" style="grid-column: track-2; grid-row: time-0900 / time-0930;">
+                    <h3 class="session-title">Multi-Cloud Database Deployment: Why & How (using MySQL)</h3>
+                    <span class="session-time">09:00 - 09:30</span>
+                    <span class="session-presenter">Divine Odazie</span>
+                </div>
+
+                <div class="session session-8 track-3" style="grid-column: track-3; grid-row: time-0900 / time-0930;">
+                    <h3 class="session-title">Ups and dows - ten years of IT experience</h3>
+                    <span class="session-time">09:00 - 09:30</span>
+                    <span class="session-presenter">Tomasz Flis</span>
+                </div>
+
+                <div class="session session-8 track-4" style="grid-column: track-4; grid-row: time-0900 / time-0930;">
+                    <h3 class="session-title">LangChain Legends: Crafting the LLM Apps of Tomorrow, Today!</h3>
+                    <span class="session-time">09:00 - 09:30</span>
+                    <span class="session-presenter">Rishab Kumar</span>
+                </div>
+
+                <div class="session session-9 track-1" style="grid-column: track-1; grid-row: time-0930 / time-1000;">
+                    <h3 class="session-title">Islands Architecture: A Recipe for Modern Web Performance Optimization</h3>
+                    <span class="session-time">09:30 - 10:00</span>
+                    <span class="session-presenter">Olabode Lawal-Shittabey</span>
+                </div>
+
+                <div class="session session-9 track-2" style="grid-column: track-2; grid-row: time-0930 / time-1000;">
+                    <h3 class="session-title">Building the Future Web: From Websites to dApps with JavaScript</h3>
+                    <span class="session-time">09:30 - 10:00</span>
+                    <span class="session-presenter">Idris Olubisi</span>
+                </div>
+
+                <div class="session session-9 track-3" style="grid-column: track-3; grid-row: time-0930 / time-1000;">
+                    <h3 class="session-title">How to create fast and fancy dashboards using Angular and IBM Cognos</h3>
+                    <span class="session-time">09:30 - 10:00</span>
+                    <span class="session-presenter">Ralf Roeber</span>
+                </div>
+
+                <div class="session session-9 track-4" style="grid-column: track-4; grid-row: time-0930 / time-1000;">
+                    <h3 class="session-title">AI-Powered E2E UI Testing: Faster Creation, Easier Maintenance</h3>
+                    <span class="session-time">09:30 - 10:00</span>
+                    <span class="session-presenter">Daniel Ostrovsky</span>
+                </div>
+
+
+                <h2 class="time-slot" style="grid-row: time-0400;">04:00pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0430;">04:30pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0500;">05:00pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0530;">05:30pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0600;">06:00pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0630;">06:30pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0700;">07:00pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0800;">08:00pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0830;">08:30pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0900;">09:00pm</h2>
+                <h2 class="time-slot" style="grid-row: time-0930;">09:30pm</h2>
+                <h2 class="time-slot" style="grid-row: time-1000;">10:00pm</h2>
+
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+    /*************************
+ * GRID SCHEDULE LAYOUT
+ *************************/
+    @media screen and (min-width:700px) {
+        .schedule {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-rows:
+			[tracks] auto
+			[time-0400] 1fr
+			[time-0430] 1fr
+			[time-0500] 1fr
+			[time-0530] 1fr
+			[time-0600] 1fr
+			[time-0630] 1fr
+			[time-0700] 2fr
+			[time-0800] 1fr
+			[time-0830] 1fr
+            [time-0900] 1fr
+            [time-0930] 1fr
+            [time-1000] 1fr;
+
+            /* Note 1:
+            Use 24hr time for gridline names for simplicity
+
+            Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+            Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+            */
+
+            grid-template-columns:
+			[times] 4em
+			[track-1-start] 1fr
+			[track-1-end track-2-start] 1fr
+			[track-2-end track-3-start] 1fr
+			[track-3-end track-4-start] 1fr
+			[track-4-end];
+        }
+    }
+
+    .time-slot {
+        grid-column: times;
+    }
+
+    .track-slot {
+        display: none; /* hidden on small screens and browsers without grid support */
+    }
+
+    @supports( display:grid ) {
+        @media screen and (min-width:700px) {
+            .track-slot {
+                display: block;
+                padding: 10px 5px 5px;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                color: white;
+            }
+        }
+    }
+
+    /* Small-screen & fallback styles */
+    .session {
+        margin-bottom:  1em;
+    }
+
+    @supports( display:grid ) {
+        @media screen and (min-width: 700px) {
+            .session {
+                margin: 0;
+            }
+        }
+    }
+
+    /*************************
+     * VISUAL STYLES
+     * Design-y stuff ot particularly important to the demo
+     *************************/
+
+    .session {
+        padding: .5em;
+        border-radius: 8px;
+    }
+
+    .session-title,
+    .session-time,
+    .session-track,
+    .session-presenter {
+        display: block;
+    }
+
+    .session-title,
+    .time-slot {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .session-title a {
+        color: #fff;
+        text-decoration-style: dotted;
+
+        &:hover {
+            font-style: italic;
+        }
+
+        &:focus {
+            outline: 2px dotted rgba(255,255,255,.8);
+        }
+    }
+
+    .track-slot,
+    .time-slot {
+        font-weight: bold;
+        font-size:.75em;
+    }
+
+    .track-1 {
+        background-color: #1259B2;
+        color: #fff;
+    }
+
+    .track-2 {
+        background-color: #687f00;
+        color: #fff;
+    }
+
+    .track-3 {
+        background-color: #544D69;
+        color: #fff;
+    }
+
+    .track-4 {
+        background-color: #c35500;
+        color: #fff;
+    }
+
+    .track-all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ccc;
+        color: #000;
+        box-shadow: none;
+    }
+
+    .text {
+        max-width: 750px;
+        font-size: 18px;
+        margin: 0 auto 50px;
+    }
+
+    .meta {
+        color: #555;
+        font-style: italic;
+    }
+
+    .meta a {
+        color: #555;
+    }
+
+    hr {
+        margin: 40px 0;
+    }
+</style>
