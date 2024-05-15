@@ -11,17 +11,18 @@ import HeaderHero from '../components/HeaderHero.astro';
             <span slot="title">Agenda</span>
             <span slot="description">May 17th</span>
         </HeaderHero>
-        <section class="max-w-screen-lg m-auto px-8">
+        <section class="max-w-screen-lg m-auto px-8 pt-8 md:pt-0">
 
             <div class="schedule" aria-labelledby="schedule-heading">
 
-                <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Track 1</span>
-                <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">Track 2</span>
-                <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">Track 3</span>
-                <span class="track-slot" aria-hidden="true" style="grid-column: track-4; grid-row: tracks;">Track 4</span>
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-1; grid-row: tracks;">Web and Mobile</span>
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-2; grid-row: tracks;">Cloud and Backend</span>
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-3; grid-row: tracks;">TIL Contributors</span>
+                <span class="track-slot" aria-hidden="true" style="grid-column: track-4; grid-row: tracks;">AI/ML and CI/CD</span>
 
                 <div class="session session-7 track-1" style="grid-column: track-1-start / track-4-end; grid-row: time-0400 / time-0430;">
                     <h3 class="session-title">Keynote: The state of security in Single Page Applications</h3>
+                    <span class="session-time">04:00 - 04:30</span>
                     <span class="session-presenter">Martina Kraus</span>
                 </div>
 
@@ -282,6 +283,7 @@ import HeaderHero from '../components/HeaderHero.astro';
 
     .time-slot {
         grid-column: times;
+        @apply hidden md:block;
     }
 
     .track-slot {
@@ -294,9 +296,11 @@ import HeaderHero from '../components/HeaderHero.astro';
                 display: block;
                 padding: 10px 5px 5px;
                 position: sticky;
-                top: 0;
+                top: 80px;
                 z-index: 1000;
-                color: white;
+                color: black;
+                background: white;
+                border-radius: 8px;
             }
         }
     }
